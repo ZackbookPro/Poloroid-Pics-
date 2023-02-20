@@ -1,0 +1,141 @@
+* { 
+
+}
+
+
+body {
+  background-color: rgb(249, 125, 125);
+}
+
+.header {
+  font-size: 50px;
+  color: antiquewhite;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+} 
+
+.row {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  column-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pictures {
+  background-color: blue;
+  width: 96%;
+  float: right;
+  margin: 0 2%;
+}
+
+.img {
+  height: 310px;
+  width: 330px;
+  padding: 18px 15px;
+}
+
+.r1{
+  height: 420px;
+  width: 360px;
+  background-color: white;
+  margin: -10px 20px 30px;
+  transition: .5s ease;
+}
+
+
+.caption {
+  background-size: 80%;
+  font-family:'Permanent Marker', cursive;
+  font-size: 20px;
+  text-align: center;
+}
+  
+.r1:hover{
+  box-shadow:
+  1px 1px #373737,
+  2px 2px #373737,
+  3px 3px #373737,
+  4px 4px #373737,
+  5px 5px #373737,
+  6px 6px #373737;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  transition: .5s ease;
+}
+
+
+
+/*Desktop Viewport*/
+
+@media(min-width: 1025px) {
+ 
+  .grid {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+  }
+}
+
+
+/* Style Rules for Large Desktops*/
+@media(min-width: 1281px) {
+  .pictures {
+    background-color: blue;
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .grid{
+    margin: auto;
+  }
+}
+
+
+/* Style Rules for tablet*/
+@media(max-width: 1024px) {
+  .header {
+    font-size: 50px;
+    color: antiquewhite;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+  }
+ 
+  .r1 {
+    display: flex;
+    margin: 10px auto 1px;
+  }
+
+  .grid {
+    margin-top: auto;
+  }
+
+}
+
+/*Style Rules for mobile*/
+
+@media(max-width: 800px) {
+  .header {
+    font-size: 35px;
+    color: antiquewhite;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;  
+  }
+
+  .r1, .r2 {
+    display: flex;
+    margin: 10px auto 1px;
+  }
+
+  .grid {
+    margin-top: auto;
+  }
+
+  
+}
